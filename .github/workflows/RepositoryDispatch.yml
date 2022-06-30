@@ -1,0 +1,9 @@
+name: Repository Dispatch
+on:
+  repository_dispatch:
+    types: [on_token_update]
+jobs:
+  myEvent:
+    runs-on: macos-latest
+    steps:
+      - run: echo ${{ github.event.client_payload.tag }}
