@@ -18,7 +18,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.API_TOKEN_GITHUB }}
           repository: YMLSreekanth/PackageB
           event-type: on_token_update
           client-payload: '{"tag": "${{ steps.vars.outputs.tag }}"}'
