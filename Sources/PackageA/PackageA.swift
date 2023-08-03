@@ -1,5 +1,5 @@
 public struct PackageA {
-    public private(set) var text = "Hello, 10:07"
+    public private(set) var text = "Hello, 11:07"
 
     public init() {
     }
